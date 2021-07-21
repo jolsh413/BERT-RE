@@ -414,6 +414,8 @@ class BioBERTProcessor_REU(DataProcessor):
       examples.append(
           InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
     return examples
+
+
 class BioBERTProcessor_(DataProcessor):
     """Processor for the BioBERT data set (GLUE version)."""
 
@@ -1959,6 +1961,7 @@ def main(_):
       "drugprot": BioBERTDrugProtProcessor,
       "ddi13": BioBERTDDIProcessor,
       "aimed": BioBERTProcessor,
+      "REU" : BioBERTProcessor_REU
   }
   models = {
       "original": create_model,
