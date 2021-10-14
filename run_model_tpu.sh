@@ -1,5 +1,5 @@
 TASK_NAME="reu"
-STORAGE_BUCKET=gs://reu-file
+STORAGE_BUCKET=gs://reu-bin
 BERT_BASE_DIR=$STORAGE_BUCKET/biobert_v1.1_pubmed
 
 DATA_DIR=$STORAGE_BUCKET/REU_DATA_tsv/
