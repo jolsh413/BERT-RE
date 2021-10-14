@@ -402,15 +402,15 @@ class BioBERTProcessor_REU(DataProcessor):
     examples = []
     for (i, line) in enumerate(lines):
       # Only the test set has a header
-      if (set_type == "test" or set_type == "train") and i == 0:
+      if set_type == "test" and i == 0:
         continue
       guid = "%s-%s" % (set_type, i)
       if set_type == "test":
-        text_a = tokenization.convert_to_unicode(line[2])
+        text_a = tokenization.convert_to_unicode(line[1])
         label = "0"
       else:
-        text_a = tokenization.convert_to_unicode(line[1])
-        label = tokenization.convert_to_unicode(line[2])
+        text_a = tokenization.convert_to_unicode(line[0])
+        label = tokenization.convert_to_unicode(line[1])
       examples.append(
           InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
     return examples
