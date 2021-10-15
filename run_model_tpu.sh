@@ -1,4 +1,4 @@
-TASK_NAME="reu"
+TASK_NAME="reu-tpu"
 STORAGE_BUCKET=gs://reu-bin
 BERT_BASE_DIR=$STORAGE_BUCKET/biobert_v1.1_pubmed
 
