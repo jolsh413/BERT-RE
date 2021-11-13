@@ -1961,7 +1961,7 @@ def main(_):
       "drugprot": BioBERTDrugProtProcessor,
       "ddi13": BioBERTDDIProcessor,
       "aimed": BioBERTProcessor,
-      "reu" : BioBERTProcessor_REU
+      "reu-tpu" : BioBERTProcessor_REU
   }
   models = {
       "original": create_model,
