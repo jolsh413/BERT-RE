@@ -14,7 +14,7 @@ for s in 2 4 6 8 10
 
 	done
 
-	python3 ./biocodes/re_eval.py --output_path=${OUTPUT_DIR} --answer_path=${DATA_DIR} --fold_number=10 --step=${s} --task_name="reu-result"
+	python3 ./biocodes/re_eval.py --output_path=${OUTPUT_DIR} --answer_path=${DATA_DIR} --fold_number=10 --step=${s} --task_name="reu-tpu"
 
 
 done
