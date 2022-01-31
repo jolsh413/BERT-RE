@@ -1,8 +1,8 @@
 TASK_NAME="reu-tpu"
-STORAGE_BUCKET=gs://reu_file14
+STORAGE_BUCKET=gs://reu_file15
 BERT_BASE_DIR=$STORAGE_BUCKET/biobert_v1.1_pubmed
 
-DATA_DIR=$STORAGE_BUCKET/REU_google_cloud_biobert081221/
+DATA_DIR=$STORAGE_BUCKET/REU_google_cloud_biobertBP/
 OUTPUT_DIR=$STORAGE_BUCKET/REU_OUTPUT/
 
 for s in 2 4 6 8 10
