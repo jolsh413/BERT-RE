@@ -1,5 +1,5 @@
 TASK_NAME="reu-tpu"
-STORAGE_BUCKET=gs://reu_file15
+STORAGE_BUCKET=gs://reu_15
 BERT_BASE_DIR=$STORAGE_BUCKET/biobert_v1.1_pubmed
 
 DATA_DIR=$STORAGE_BUCKET/REU_google_cloud_biobertBP/
